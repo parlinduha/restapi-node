@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('this is homepage users');
+  res.send(process.env.APP_NAME);
 });
 router.get('/admin', (req, res, next) => {
   res.send('this is homepage Admin');
